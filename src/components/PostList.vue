@@ -20,12 +20,9 @@ const posts = ref(getPosts(5))
 onMounted(() => {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        loadMorePosts()
-      }
+      if (entry.isIntersecting) loadMorePosts()
     })
   })
-
   observer.observe(document.querySelector('#infinite-scroll-trigger'))
 },)
 
