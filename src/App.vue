@@ -21,5 +21,6 @@ import Footer from './components/Footer.vue';
   margin: 0 auto;
   border-left: 1px solid #E4E4E4;
   border-right: 1px solid #E4E4E4;
+  background: #fff;
 }
 </style>

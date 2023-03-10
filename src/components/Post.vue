@@ -1,7 +1,7 @@
 <template>
-  <div class="post">
+  <li class="post">
     <div class="post-top">
-      <User :user="post.user"/>
+      <User :user="post.user" />
       <button class="post-more"><img src="../assets/svg/more.svg" alt="more"></button>
     </div>
     <img class="post-image" :src="post.img" alt="photo">
@@ -17,7 +17,7 @@
       <span class="post-description__user">{{ post.user }}</span>
       <span class="post-description__text">{{ post.description }}</span>
     </div>
-  </div>
+  </li>
 </template>
 
 <script setup>
@@ -33,6 +33,7 @@ const props = defineProps({
 .post {
   padding-bottom: 30px;
   border-bottom: 1px solid #E4E4E4;
+
   &-top {
     display: flex;
     justify-content: space-between;

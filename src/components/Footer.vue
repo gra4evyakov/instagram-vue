@@ -26,7 +26,7 @@
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #E4E4E4;
-  background: #fff;
+  background: inherit;
   &-menu {
     width: 100%;
     list-style-type: none;

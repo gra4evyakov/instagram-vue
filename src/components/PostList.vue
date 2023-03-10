@@ -1,7 +1,8 @@
 <template>
-  <div class="scrolling-component" ref="scrollComponent">
+  <ul class="scrolling-component">
     <Post v-for="(post, index) in posts" :post="post" :key="index" />
-  </div>
+    <div id="infinite-scroll-trigger"></div>
+  </ul>
 </template>
 
 <script setup>
@@ -15,22 +16,23 @@ const loadMorePosts = () => {
 }
 
 const posts = ref(getPosts(5))
-const scrollComponent = ref(null)
 
 onMounted(() => {
-  window.addEventListener('scroll', handleScroll)
-})
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        loadMorePosts()
+      }
+    })
+  })
+
+  observer.observe(document.querySelector('#infinite-scroll-trigger'))
+},)
 
 onUnmounted(() => {
-  window.removeEventListener('scroll', handleScroll)
+  observer.disconnect()
 })
 
-const handleScroll = (e) => {
-    if ((window.innerHeight + window.pageYOffset >= document.body.offsetHeight)) {
-      loadMorePosts()
-    }
-};
 </script>
 
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>

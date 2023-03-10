@@ -13,12 +13,12 @@
 .header {
   position: sticky;
   top: 0;
-  padding: 10px 20px;
+  padding: 15px 20px 5px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #E4E4E4;
-  background: #fff;
+  background: inherit;
   &-menu {
     display: flex;
     align-items: center;
