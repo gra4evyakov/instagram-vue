@@ -1,10 +1,10 @@
 <template>
   <header class="header">
-    <a href="#" class="header-logo"><img src="/svg/logo.svg" alt="logo"></a>
+    <a href="#" class="header-logo"><img src="../assets/svg/logo.svg" alt="logo"></a>
     <div class="header-menu">
       <!-- <a class="header-menu__link" href="#"><img src="/svg/video.svg" alt="video"></a> -->
-      <a class="header-menu__link" href="#"><img src="/svg/heart.svg" alt="heart"></a>
-      <a class="header-menu__link" href="#"><img src="/svg/direct.svg" alt="direct"></a>
+      <a class="header-menu__link" href="#"><img src="../assets/svg/heart.svg" alt="heart"></a>
+      <a class="header-menu__link" href="#"><img src="../assets/svg/direct.svg" alt="direct"></a>
     </div>
   </header>
 </template>

@@ -1,11 +1,11 @@
 <template>
   <footer class="footer">
     <ul class="footer-menu">
-      <li class="footer-menu__item"><img src="/svg/home.svg" alt="home"></li>
-      <li class="footer-menu__item"><img src="/svg/search.svg" alt="search"></li>
-      <li class="footer-menu__item"><img src="/svg/video.svg" alt="video"></li>
-      <li class="footer-menu__item"><img src="/svg/reel.svg" alt="reel"></li>
-      <li class="footer-menu__item"><img src="/img/avatar.png" alt="avatar"></li>
+      <li class="footer-menu__item"><img src="../assets/svg/home.svg" alt="home"></li>
+      <li class="footer-menu__item"><img src="../assets/svg/search.svg" alt="search"></li>
+      <li class="footer-menu__item"><img src="../assets/svg/video.svg" alt="video"></li>
+      <li class="footer-menu__item"><img src="../assets/svg/reel.svg" alt="reel"></li>
+      <li class="footer-menu__item"><img src="../assets/img/avatar.png" alt="avatar"></li>
     </ul>
   </footer>
 </template>

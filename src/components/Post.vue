@@ -2,16 +2,16 @@
   <div class="post">
     <div class="post-top">
       <User :user="post.user"/>
-      <button class="post-more"><img src="/svg/more.svg" alt="more"></button>
+      <button class="post-more"><img src="../assets/svg/more.svg" alt="more"></button>
     </div>
     <img class="post-image" :src="post.img" alt="photo">
     <div class="post-buttons">
       <div class="post-buttons-left">
-        <button><img src="/svg/heart.svg" alt="heart"></button>
-        <button><img src="/svg/comment.svg" alt="comment"></button>
-        <button><img src="/svg/direct.svg" alt="direct"></button>
+        <button><img src="../assets/svg/heart.svg" alt="heart"></button>
+        <button><img src="../assets/svg/comment.svg" alt="comment"></button>
+        <button><img src="../assets/svg/direct.svg" alt="direct"></button>
       </div>
-      <button><img src="/svg/collect.svg" alt="collect"></button>
+      <button><img src="../assets/svg/collect.svg" alt="collect"></button>
     </div>
     <div class="post-description">
       <span class="post-description__user">{{ post.user }}</span>
