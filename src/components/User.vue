@@ -1,6 +1,6 @@
 <template>
   <div class="user">
-    <img class="user-avatar" src="../assets/img/avatar.png" alt="avatar">
+    <a href="#"><img class="user-avatar" src="../assets/img/avatar.png" alt="avatar"></a>
     <div class="user-text">
       <span class="user-text__name">{{ user }}</span>
       <span class="user-text__location">Saratov</span>

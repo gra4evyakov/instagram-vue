@@ -1,3 +1,7 @@
+const assets = import.meta.glob('../assets/img/*', {
+  eager: true,
+  import: 'default'
+})
 
 const getPosts = (number) => {
   const ret = [];
@@ -5,7 +9,7 @@ const getPosts = (number) => {
   for (let index = 1; index < number + 1; index++) {
     ret.push({
       user: "John",
-      img: new URL(`../assets/img/photo${index}.png`, import.meta.url).href,
+      img: assets[`../assets/img/photo${index}.png`],
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, ipsam!",
     });
